@@ -1,0 +1,40 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="Robots" content="ALL" />
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <style>
+	#test {
+		font-family: Arial, Helvetica, sans-serif;
+		display:block;
+		border:1px solid #000099;
+		width:60%;
+	}
+  </style>
+  <script type="text/javascript" src="../src/qip.js"></script>
+  <script type="text/javascript">
+<!--
+function test() {
+	qip.log('Test begin');
+	qip.log(qip.guid());
+	//qip.config.stopOnError = false;
+	//throw new Error('test');
+	//qip.config.stopOnError = true;
+	throw new Error('test');
+	qip.log('Post error');
+	//qip.log(qip.ajax.call('https://duckduckgo.com/', 'q=test'));
+	//qip.log(qip.ajax.makeRequest('https://duckduckgo.com/', 'q=test'));
+	qip.log(qip.oop.type(qipo));
+}
+-->
+  </script>
+  <title>Test page</title>
+</head>
+<body onload="test()">
+  <div id="test">
+  </div>
+</body>
+</html>
+
